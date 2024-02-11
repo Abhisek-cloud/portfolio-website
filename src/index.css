@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: "Roboto", sans-serif;
+}
+.hero-img {
+  height: 500px;
+  border-radius: 30% 70% 61% 39% / 42% 34% 66% 58%;
+}
+
+@media (width<=768px) {
+  .hero-img {
+    height: 300px;
+  }
+}
