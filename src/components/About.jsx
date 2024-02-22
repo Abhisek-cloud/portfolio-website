@@ -1,9 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="px-2 md:px-0 bg-[#11071F] ">
-      <div className="container md:mx-auto text-white flex flex-col justify-center items-center h-[300px]">
+    <motion.section className="px-2 md:px-0 bg-[#11071F] ">
+      <motion.div
+        className="container md:mx-auto text-white flex flex-col justify-center items-center h-[300px]"
+        initial={{ y: 100 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: false }}
+      >
         <h2 className="text-center text-[50px] font-bold text-white  border-b  ">
           About
         </h2>
@@ -19,8 +26,8 @@ const About = () => {
           visually appealing, user-friendly websites that make a lasting impact.
           Let's connect and build something amazing together! */}
         </p>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

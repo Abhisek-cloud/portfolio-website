@@ -12,7 +12,7 @@ const links = [
 const Navbar = () => {
   const [isOpen, setIsopen] = useState(false);
   return (
-    <nav className=" relative bg-[#1A0B2E] flex items-center justify-between px-10 py-3 text-white  h-[50px]">
+    <nav className=" relative bg-[#1A0B2E] flex items-center justify-between px-10 py-3 text-white  h-[50px] z-10">
       <div>
         <h1 className="text-3xl">Portfolio</h1>
       </div>
